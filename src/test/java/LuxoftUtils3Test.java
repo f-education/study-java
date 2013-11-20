@@ -1,4 +1,4 @@
-import com.com.luxoft.dnepr.courses.unit2.LuxoftUtils3;
+import com.luxoft.dnepr.courses.unit2.LuxoftUtils3;
 import junit.framework.Assert;
 import org.junit.Test;
 

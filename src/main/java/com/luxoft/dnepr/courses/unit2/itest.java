@@ -1,4 +1,4 @@
-package com.com.luxoft.dnepr.courses.unit2;
+package com.luxoft.dnepr.courses.unit2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
