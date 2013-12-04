@@ -22,7 +22,7 @@ public class LuxoftUtils3Test {
 
         str = "Лиса Алиса";
         Assert.assertEquals(4.5, LuxoftUtils3.wordAverageLength(str));
-      */
+
     @Test
     public void testReverseWords() {
 
@@ -37,5 +37,18 @@ public class LuxoftUtils3Test {
     }
 
 
+
+    @Test
+    public void testGetCharEntries(){
+        str = "dCe Yz";
+        Assert.assertEquals("CYdez", LuxoftUtils3.getCharEntries(str));
+
+        str = "I have a Sun";
+        Assert.assertEquals("ISaehnuv", LuxoftUtils3.getCharEntries(str));
+
+        str = "  AAbbCC zZ";
+        Assert.assertEquals("ACZbz", LuxoftUtils3.getCharEntries(str));
+
+    }      */
 }
 

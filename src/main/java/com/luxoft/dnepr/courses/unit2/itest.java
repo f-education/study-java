@@ -1,8 +1,6 @@
 package com.luxoft.dnepr.courses.unit2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,19 +11,19 @@ import java.util.List;
  */
 public class itest {
     public static void main(String[] args) {
-        String str = "Alice";
+        String str = "  AAbbCC zZ";
+        String result;
+        Map<Character, Integer> map = new TreeMap<Character, Integer>();
         char[] array = str.toCharArray();
-        Arrays.sort(array);
-        int i;
-        for (i = 0; i < array.length; i++){
-            if (array[i] == array[i-1]) Arrays.re
-            remove(array[i]);
 
+        int i;
+        for (i = 0; i < array.length; i++) {
+            if (array[i] != '\u0020') map.put(array[i], i);
         }
 
-        System.out.print(Arrays.toString(array));
-
-
-
+        for (Map.Entry<Character, Integer> mapNew : map.entrySet()) {
+            result = mapNew.getKey().toString();
+            System.out.print(result);
+        }
     }
 }

@@ -2,6 +2,9 @@ package com.luxoft.dnepr.courses.unit2;
 
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * User: Maxim
@@ -10,7 +13,7 @@ import java.util.Arrays;
  */
 public final class LuxoftUtils3 {
 
-
+         /*
     public static double wordAverageLength(String str) {
         int j = 0;
         char[] arrayChar = str.toCharArray();
@@ -41,22 +44,27 @@ public final class LuxoftUtils3 {
         }
         return sbEnd.toString();
     }
-        /*
+
 
     public static char[] getCharEntries(String str) {
-
+        String result = null;
+        //char[] rez;
+        Map<Character, Integer> map = new TreeMap<Character, Integer>();
         char[] array = str.toCharArray();
-        int i;
-        Arrays.sort(array);
 
-
-        for (i = 0; i < array.length; i++){
-        if (array[i] )
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != '\u0020') map.put(array[i], i);
         }
 
+        for (Map.Entry<Character, Integer> mapNew : map.entrySet()) {
+            result = mapNew.getKey().toString();
 
-    }    */
-
+        }
+       // rez = result.toCharArray();
+       //String rez = new String(result);
+        return result.toCharArray();
+    }
+                   */
 }
 
 
